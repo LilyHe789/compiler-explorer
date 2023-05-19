@@ -410,6 +410,7 @@ export class CompilerService {
         statusIcon: JQuery | null,
         status: CompilationStatus,
     ) {
+        // XXX
         if (statusLabel != null) {
             statusLabel.toggleClass('error', status.code === 3).toggleClass('warning', status.code === 2);
         }

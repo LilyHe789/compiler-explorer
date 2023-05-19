@@ -341,6 +341,7 @@ function findConfig(defaultConfig: ConfigType, options: CompilerExplorerOptions,
             } else {
                 try {
                     config = url.deserialiseState(window.location.hash.substring(1));
+                    console.log(config);
                 } catch (e) {
                     // #3518 Alert the user that the url is invalid
                     const alertSystem = new Alert();
